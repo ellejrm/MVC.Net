@@ -1,0 +1,24 @@
+
+    body {
+        background-color: rgb(183, 255, 255);
+    }
+
+    h1 {
+        background-color: rgb(63, 126, 131);
+        color: rgb(189, 224, 235);
+        border: 2px solid rgb(183, 255, 255);
+        text-align: center;
+    }
+
+    h2 {
+        color: gray;
+        text-align: center;
+        border: 2px dotted rgb(87, 139, 168);
+        margin-bottom: 50px;
+    }
+
+    p {
+        text-align: center;
+        color: gray;
+        border: 3px double rgb(87, 139, 168);
+    }
