@@ -1,5 +1,4 @@
-
-    body {
+body {
         background-color: rgb(183, 255, 255);
     }
 
@@ -11,14 +10,18 @@
     }
 
     h2 {
-        color: gray;
+        background-color: cornflowerblue;
+        color: whitesmoke;
         text-align: center;
         border: 2px dotted rgb(87, 139, 168);
         margin-bottom: 50px;
     }
 
     p {
+        background-color: rgb(182, 241, 232);
         text-align: center;
-        color: gray;
+        color: rgb(56, 107, 109);
         border: 3px double rgb(87, 139, 168);
     }
+
+    
