@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(174, 211, 235);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: rgb(202, 240, 255);
+    background-color: rgb(113, 158, 184);
+    border: 4px dashed rgb(31, 54, 54);
+    border-radius: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.main {
+    background-color: rgb(204, 255, 247);
+    color: rgb(45, 118, 160);
+    border: double rgb(41, 80, 131);
+    padding: 20px;
+    margin: 20px;
+}
+.secondary {
+    background-color: rgb(136, 178, 218);
+    color: rgb(213, 236, 255);
+    border: solid rgb(41, 103, 131);
+    padding: 20px;
+    margin: 20px;
+}
+.third {
+    background-color: rgb(172, 220, 247);
+    color: rgb(45, 108, 160);
+    border-radius: 25px;
+    border: dashed rgb(41, 110, 131);
+    padding: 20px;
+    margin: 20px;
+}

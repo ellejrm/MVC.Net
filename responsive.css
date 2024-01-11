@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e3ffdc;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #dcffd4;
+    color: #1d4619;
+    padding: 15px;
+    text-align: center;
+    border-color: 3px rgb(56, 191, 74);
+    border-radius: 25px;
+    border: 2px dashed #195f 20;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.snav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #8fe58f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  ul.snav li a {
+    display: block;
+    color: #2d5f19;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  ul.snav li a.active {
+    background-color: rgb(49, 95, 43);
+    color: #ddf5e0;
+  }
+
+  ul.snav li a:hover:not(.active) {
+    background-color: #67be7d;
+    color: #295524;
+  }
+
+  div.row {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  .aside {
+    background-color: rgb(40, 102, 73);
+    padding: 15px;
+    color: #f4f6ee;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .footer {
+    background-color: #256e25;
+    text-align: center;
+    color: #dfffd0;
+  }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For Tablet */
+
+    ul.snav {
+      width: 100%;
+      height: auto;
+      position: relative;
+     }
+  
+     ul.snav li a {
+      float: left;
+      padding: 15px;
+     }
+  
+     div.row {margin-left: 0;}
+    
+    .col-s-4 {width: 33.33%;}
+  }
+
+    @media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    .col-4 {width: 33.33%;}
+    }
+
+    @media screen and (max-width: 500px) {
+      ul.snav li a {
+        text-align: center;
+        float: none;
+      }
+      [class*="col-"] {
+        width: 100%;
+      }
+    }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="navigationstyle.css">
     <style>
         table, th, td {
             border: 2px solid black;
@@ -12,33 +13,68 @@
         }
         #board {
             width: 100%; 
+            background-color: rgb(28, 94, 28);
+            color: rgb(175, 218, 175);
         }
         #ST {
-            text-align: center;
+            text-align: center; 
+            background-color: rgb(255, 255, 186);
+            color: rgb(82, 82, 22);
         }
         .boys {
-            background-color: rgb(168, 255, 255);
+            background-color: rgb(194, 255, 255);
+            color: rgb(39, 39, 117);
         }
         .girls {
-            background-color: rgb(215, 152, 252);
+            background-color: #e2b1ff;
+            color: #4e2666;
         }
         body {
-            background-color: rgb(222, 247, 247);
+            background-color: rgb(167, 255, 236);
         }
         h1 {
             text-align: center;
             border: 2px dotted rgb(55, 66, 49);
+            border-radius: 25px;
             color: rgb(50, 77, 77);
+        }
+        .blank {
+            background-color: whitesmoke;
+            color: black;
+        }
+        .daanan {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
+    <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+    background-color: #a7c9f5;">
+        <div class="navbar">
+            <a href="profile.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Activities</button>
+                <div class="dropdown-content">
+                    <a href="classes&ID.html" style="float: left;">Class & ID</a>
+                    <a href="colored.html" style="float: left;">Color</a>
+                    <a href="CSSPage1.html" style="float: left;">CSS</a>
+                    <a href="div.html" style="float: left;">Division</a>
+                    <a href="heading.html" style="float: left;">Heading</a>
+                    <a href="myimage.html" style="float: left;">Images</a>
+                    <a href="paragraph.html" style="float: left;">Paragraph</a>
+                    <a href="SeatingArrangement.html" style="float: left;">Table</a>
+                    <a href="text formatting.html" style="float: left;">Text Formatting</a>
+                </div>
+            </div>
+        </div>
+    </ul>
     <h1> Seating Arrrangement Table</h1>
 
     <table id="board">
         <tr>
             <th colspan="7">Black board</th>
-            <td rowspan="8">Daanan</td>
+            <td rowspan="8" class="daanan">Daanan</td>
         </tr>
         <tr>
             <td colspan="7" id="ST">student teacher</td>
@@ -47,14 +83,14 @@
             <td class="girls">Samio</td>
             <td class="girls">Campo</td>
             <td class="boys">Broqueza</td>
-            <td rowspan="6">Daanan</td>
+            <td rowspan="6" class="daanan">Daanan</td>
             <td class="girls">Ramiscal</td>
             <td class="girls">Abuyo</td>
             <td class="girls">Ortega</td>
         </tr>
         <tr>
             <td class="boys">Chua</td>
-            <td>blank</td>
+            <td class="blank">blank</td>
             <td class="boys">Sosmena</td>
             <td class="boys">Brusas</td>
             <td class="girls">Banzon</td>
@@ -62,7 +98,7 @@
         </tr>
         <tr>
             <td class="boys">Tidde</td>
-            <td>blank</td>
+            <td class="blank">blank</td>
             <td class="boys">Mahinay</td>
             <td class="boys">Bonifacio</td>
             <td class="boys">Tubera</td>
@@ -81,8 +117,8 @@
             <td class="boys">Villaverde</td>
             <td class="boys">Castillo</td>
             <td class="boys">Lumanog</td>
-            <td>blank</td>
-            <td>blank</td>
+            <td class="blank">blank</td>
+            <td class="blank">blank</td>
         </tr>
     </table>
 </body>

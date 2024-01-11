@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .num1 {
+            width: 100%;
+            height: 100%;
+            border: solid rgb(0, 0, 0);
+        }
+        .item1 {
+            grid-area: Logo;
+            border: solid green;
+            height: 100px;
+        } 
+        .item2 {
+            grid-area: SearchBar;
+            border: solid green;
+            height: 100px;
+        }
+        .item3 {
+            grid-area: NavBar;
+            border: solid green;
+            height: 100px;
+        }
+        .grid-container {
+            border: black solid;
+            display: grid;
+            grid-template-areas:
+                'Logo SearchBar SearchBar SearchBar NavBar NavBar NavBar';
+            gap: 5px;
+            padding: 10px;
+        }
+        .grid-container2 {
+            border: black solid;
+            display: grid;
+            grid-template-areas:
+                'Atem1 Atem1 Atem1 Atem2 Atem2 Atem2';
+            gap: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .btem1 {
+            grid-area: Atem1;
+            border: solid blue; 
+            height: 100px;
+        }
+        .btem2 {
+            grid-area: Atem2;
+            border: solid blue;
+            height: 100px;
+        }
+        .containing {
+            display: grid;
+            grid-template-areas:
+                'first first first first second second'
+                'first first first first second second'
+                'first first first first second second'
+                'first first first first second second'
+                'first first first first second second'
+                'first first first first second second'
+                ;
+            gap: 5px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .grid-container3 {
+            display: grid;
+            grid-area: first;
+            grid-template-areas:
+                'atem1 atem2'
+                'atem3 atem4'
+                'atem5 atem6'
+                'atem7 atem8'
+                'atem9 atem9'
+                'atem9 atem9'
+                ;
+            gap: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: solid black;
+        }
+        .atem1 {
+            grid-area: atem1;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem2 {
+            grid-area: atem2;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem3 {
+            grid-area: atem3;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem4 {
+            grid-area: atem4;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem5 {
+            grid-area: atem5;
+            border: solid yellow;;
+            position: relative;
+            height: 100px;
+        }
+        .atem6 {
+            grid-area: atem6;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem7 {
+            grid-area: atem7;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem8 {
+            grid-area: atem8;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .atem9 {
+            grid-area: atem9;
+            border: solid yellow;
+            position: relative;
+            height: 100px;
+        }
+        .grid-container4 {
+            display: grid;
+            grid-area: second;
+            grid-template-areas:
+                'sale1'
+                'sale2'
+                'sale3'
+                'sale4'
+                ;
+            gap: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: solid black;
+        }
+        .ctem1 {
+            grid-area: sale1;
+            border: solid red;
+            position: relative;
+            height: 100px;
+        }
+        .ctem2 {
+            grid-area: sale2;
+            border: solid red;
+            position: relative;
+            height: 100px;
+        }
+        .ctem3 {
+            grid-area: sale3;
+            border: solid red;
+            position: relative;
+            height: 100px;
+        }
+        .ctem4 {
+            grid-area: sale4;
+            border: solid red;
+            position: relative;
+            height: 100px;
+        }
+        .grid-container5 {
+            display: grid;
+            grid-template-areas:
+            'info links follow'
+            'copyright copyright copyright';
+            gap: 5px;
+            padding: 5px;
+            margin-top: 5px;
+            border: black solid;
+        }
+        .dtem1 {
+            grid-area: info;
+            border: solid purple;
+            position: relative;
+            height: 100px;
+        }
+        .dtem2 {
+            grid-area: links;
+            border: solid purple;
+            position: relative;
+            height: 100px;
+        }
+        .dtem3 {
+            grid-area: follow;
+            border: solid purple;
+            position: relative;
+            height: 100px;
+        }
+        .dtem4 {
+            grid-area: copyright;
+            border: solid purple;
+            position: relative;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+<div class="item1">Logo</div>
+<div class="item2">Search Bar</div>
+<div class="item3">NavBar</div>
+</div>
+
+<div class="grid-container2">
+<div class="btem1">Ads #1</div>
+<div class="btem2">Ads #2</div>
+</div>
+<div class="containing">
+        <div class="grid-container3">
+            <div class="atem1">Item 1</div>
+            <div class="atem2">Item 2</div>
+            <div class="atem3">Item 3</div>
+            <div class="atem4">Item 4</div>
+            <div class="atem5">Item 5</div>
+            <div class="atem6">Item 6</div>
+            <div class="atem7">Item 7</div>
+            <div class="atem8">Item 8</div>
+            <div class="atem9">Item 9</div>
+        </div>
+        <div class="grid-container4">
+            <div class="ctem1">Sale 1</div>
+            <div class="ctem2">Sale 2</div>
+            <div class="ctem3">Sale 3</div>
+            <div class="ctem4">Sale 4</div>
+        </div>
+</div>
+<div class="grid-container5">
+    <div class="dtem1">Info</div>
+    <div class="dtem2">Links</div>
+    <div class="dtem3">Follow</div>
+    <div class="dtem4">Copyright</div>
+</div>
+</body>
+</html>

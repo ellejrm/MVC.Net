@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Listing</title>
+    <link rel="stylesheet" href="navigationstyle.css">
+    <style>
+    html {
+        height: 100%;
+    }
+    body {
+        background-color: rgb(194, 246, 255);
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    p, div {
+        border: 3px solid #1d6074;
+        margin-bottom: 5px;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        font-style: italic;
+    }
+    p {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    span {
+        font-weight: bold;
+        font-family: 'Times New Roman';
+    }
+    .one {
+        background-color: #a7c9f5;
+        margin-bottom: 10px;
+    }
+    .two {
+        background-color: #a7c9f5;
+        margin-bottom: 10px;
+    }
+    .three {
+        background-color: #a7c9f5;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+    background-color: #a7c9f5;">
+        <div class="navbar">
+            <a href="profile.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Activities</button>
+                <div class="dropdown-content">
+                    <a href="classes&ID.html" style="float: left;">Class & ID</a>
+                    <a href="colored.html" style="float: left;">Color</a>
+                    <a href="CSSPage1.html" style="float: left;">CSS</a>
+                    <a href="div.html" style="float: left;">Division</a>
+                    <a href="heading.html" style="float: left;">Heading</a>
+                    <a href="myimage.html" style="float: left;">Images</a>
+                    <a href="paragraph.html" style="float: left;">Paragraph</a>
+                    <a href="SeatingArrangement.html" style="float: left;">Table</a>
+                    <a href="text formatting.html" style="float: left;">Text Formatting</a>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <p class="design">This is an <span>Order List Activity</span></p>
+    <div class="one">
+        This is a division containing a <i> Unordered List</i><br>
+        <h3>Some of our Subjects in 11-SCALA</h3>
+            <ul>
+                <li>UCSP</li>
+                    <ul>
+                        <li>History</li>
+                        <li>Society</li>
+                        <li>Laws</li>
+                    </ul>
+                <li>GenMath</li>
+                <ul>
+                    <li>Functions</li>
+                    <li>Rational Expression</li>
+                </ul>
+                <li>Emtech</li>
+                <ul>
+                    <li>Google</li>
+                        <ul>
+                          <li>Google Sheets</li>
+                           <li>Google Docs</li>
+                            <li>Google Slides</li>
+                            <li>Google Forms</li>
+                       </ul>
+                </ul>
+            </ul>
+    </div>
+    <div class="two">
+        This is a division containing a <i> Ordered List</i><br>
+        <h3>Stages of Human Evolution</h3>
+            <ol>
+                <li>Australopithecus Afarensis <i>(Lucy)</i></li>
+                <li>Homo Habilis</li>
+                <li>Homo Ergaster</li>
+                <li>Homo Heidelbergensis</li>
+                <li>Homo Neanderthalensis</li>
+                <li>Homo Sapiens</li>
+            </ol>
+    </div>
+    <div class="three">
+        This is a division containing a <i>Description List</i><br>
+        <h3>Functions of Communication</h3>
+            <dl>
+                <dt>Social Interaction</dt>
+                    <dd>It is exchanging information between one person to another.</dd>
+                <dt>Motivation</dt>
+                    <dd>It is used to encourage someone/the reason why someone is acting in a particular behavior.</dd>
+                <dt>Emotional Expression</dt>
+                    <dd>Used to express your feelings</dd>
+                <dt>Regulation and Control</dt>
+                    <dd>It is used to control the behavior of a particular group of person or an individual.</dd>
+                <dt>Information</dt>
+                    <dd>The ideas or knowledge that can be acquired or shared by another person.</dd>
+            </dl>
+    </div>
+</body>
+</html>
