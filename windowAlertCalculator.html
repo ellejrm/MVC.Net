@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num1=parseFloat(prompt('Enter the First Number:'));
+        const operator=(prompt('Enter the Operator to Perform(either +,-,* or /):'));
+        const num2=parseFloat(prompt('Enter the Second Number:'));
+        let result;
+        if(operator=='+'){
+                result = num1 + num2;
+        }
+        else if(operator=='-'){
+                result = num1 - num2;
+        }
+        else if(operator=='*'){
+                result = num1 * num2;
+        }
+        else if(operator=='/'){
+                result = num1 / num2;
+        }
+        else {
+            result = 'The operator you typed is invalid!';
+        }
+        window.alert('Result is:' + result);
+    </script>
+
+</body>
+</html>

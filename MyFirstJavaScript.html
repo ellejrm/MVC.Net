@@ -4,26 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First JavaScript</title>
-    <script>
-        function lightOn(){
-            document.getElementById('myImage').src='pic_bulbon.gif'
-        }
-        function lightOff(){
-            document.getElementById('myImage').src='pic_bulboff.gif'
-        }
-    </script>
+    <script src="MyScript.js"></script>
 </head>
 <body>
     <h2>What Can JavaScript Do?</h2>
-
 <button onclick="lightOn()">Turn on the light</button>
-
 <img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
 <button onclick="lightOff()">Turn off the light</button>
-
-<button onclick="document.getElementById('myImage').style.display='none'">Remove LightBulb</button>
-
-<button onclick="document.getElementById('myImage').style.display='block'">Display LightBulb</button>
+<h2 id="outputHeader">JavaScript Outputs</h2>
+<button onclick="overWrite()">Click to use inner HTML</button>
+<button onclick="documentWrite()">Click to use document write</button>
+<button onclick="WindowAlert()">Click to use window alert</button>
+<button onclick="ConsoleLog()">Click to use console log</button>
 </body>
 </html>

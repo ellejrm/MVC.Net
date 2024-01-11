@@ -1,0 +1,51 @@
+.Calcu {
+    width: 300px;
+    height: 430px;
+    margin: 20px auto;
+    border: 3px solid rgb(26, 54, 26);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(193, 255, 203);
+}
+
+h1 {
+    text-align: center;
+    padding: 23px;
+    background-color: rgb(213, 255, 241);
+    color: rgb(50, 80, 70);
+}
+
+input:hover {
+    background-color: rgb(142, 218, 142);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: rgb(106, 148, 106);
+    color: white;
+}
+
+.numview {
+    text-align: right;
+    width: 223px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: rgb(239, 253, 239);
+}
+
+.dis {
+position: relative;
+margin-left: 38px;
+margin-top: 50px;
+}
